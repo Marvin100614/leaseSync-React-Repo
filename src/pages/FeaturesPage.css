@@ -1,0 +1,213 @@
+
+.features-main-container{
+    max-width: 1600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding-top: 82px;
+}
+.heading-title-text{
+    font-weight: bold !important;
+    color: var(--darkBlue-color) !important;
+    text-align: center;
+    margin: 40px 0 40px 0 !important;
+    position: relative;
+    font-size: 29px;
+}
+.features-custom-container{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 1238px !important; /* Change to max-width */
+    width: 100% !important; /* Change to 100% */
+    margin: 0 auto !important;
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+    display: flex;
+    flex-direction: column;
+    align-items: unset !important;
+    padding: 0 176px !important;
+    justify-content: space-evenly;
+}
+.heading-title-text::after {
+    content: "";
+    display: block; 
+    width: 237px !important;
+    height: 3px !important; 
+    background-color: var(--blue-color); 
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-con{
+    max-width: 186px !important;
+    height: 186px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+}
+.features-pics{
+    width: 100px;
+    height: 100px;
+}
+.text-title{
+    color: var(--darkBlue-color);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 5px;
+}
+/* .button {
+    width: 167.36px;
+    height: 36.3px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px !important;
+    background-color: var(--darkBlue-color) !important;
+    border: none;
+    outline: none;
+    font-weight: normal !important;
+    transition: color 0.3s ease, background-position 0.3s ease;
+    background-image: linear-gradient(to right, var(--darkBlue-color) 50%, var(--blue-color) 50%); 
+    background-size: 200% 100%; 
+  }
+  .button:hover {
+    color: #ffffff;
+    background-position: -100% 0;
+  } */
+.row-con{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    height: auto;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+}
+.row-con-last{
+    height: auto;
+    padding: 0 139px 0 139px;
+}
+.col-con-last{
+    max-width: 152px !important;
+    height: 135px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+} 
+.text-interested{
+    font-weight: 800 !important;
+    color: #000000 !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 9px !important;
+    font-size: 26px !important;
+}
+.scheduleaDemo-link{
+    width: 124px !important;
+    height: 29px !important;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 11px !important;
+    background-color: var(--blue-color) !important;
+    border: none;
+    outline: none;
+    transition: color 0.3s ease, background-position 0.3s ease;
+    background-image: linear-gradient(to right, var(--blue-color) 50%, var(--darkBlue-color) 50%); 
+    background-size: 200% 100%; 
+    text-decoration: none;
+    text-align: center;
+    padding-top: 6px;
+} 
+.scheduleaDemo-link:hover{
+    color: #ffffff;
+    background-position: -100% 0;
+}
+.btn-con{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+} 
+.arrow-icon-link{
+    width: 32px;
+    height: 30px;
+    margin-left: 72px;
+    transition: ease .3s;
+}
+.arrow-icon-link:hover{
+   opacity: .5;
+  
+}
+
+
+/* RESPONSIVE AREA */
+
+
+@media only screen
+and (max-width : 1200px) {
+    .features-custom-container { padding: 0 110px !important;}
+}
+
+@media only screen
+and (max-width : 1100px) {
+    .features-custom-container { padding: 0 64px !important;}
+}
+
+@media only screen
+and (max-width : 900px) {
+    .text-title { font-size: 14px;}
+    .col-con { max-width: 162px !important; height: 197px;}
+    .features-pics { width: 90px; height: 90px; }
+}
+
+@media only screen
+and (max-width : 800px) {
+    .col-con { max-width: 129px !important; height: 156px; }
+    .features-pics { width: 80px; height: 80px; }
+    .text-title { font-size: 12px; }
+    .arrow-icon-link { width: 28px; height: 25px; }
+    .heading-title-text::after{width: 204px !important;}
+    .heading-title-text { font-size: 25px;}
+    .text-interested { font-size: 24px !important;}
+    .schedule-button { width: 117px !important; height: 26px !important; font-size: 10px !important;}
+}
+
+@media only screen
+and (max-width : 700px) {
+    .features-custom-container { flex-direction: row; flex-wrap: wrap; padding: 0 39px !important; }
+    .col-con { max-width: 50%; flex: 0 0 50%; height: 165px; }
+    .text-title {  padding: 0 3px;}
+}
+
+@media only screen
+and (max-width : 600px) {
+    .row-con { flex-wrap: wrap !important; flex-direction: row; height: auto;  margin-bottom: 0 !important;}
+    .col-con { max-width: 46% !important;   height: 267px; margin-bottom: 50px;  flex: 0 0 50%; }
+    .features-pics { width: 158px !important; height: 158px !important; }
+    .text-title { font-size: 20px; }
+    .button { width: 165px; height: 32px; font-size: 18px !important; }
+
+    .row-con-last { height: 800px !important; padding: 0 !important; flex-direction: column; }
+    .col-con-last { max-width: 349px !important; height: 350px; margin-bottom: 50px; }   
+    .arrow-icon-link { width: 35px; height: 32px; }     
+    .features-custom-container { padding: 0 51px !important;}
+}
+
+@media only screen and (min-width: 552px) and (max-width: 600px) {
+    .col-con { margin-right: 16px; margin-left: 16px;}
+}
+
+@media only screen
+and (max-width : 500px) {
+    .col-con { max-width: 100% !important; margin: 0 40px 50px 40px !important;}
+}

@@ -1,0 +1,149 @@
+.contact-main-container{
+    max-width: 1600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 82px;
+}
+.heading-title-contact {
+    font-weight: bold !important;
+    color: var(--darkBlue-color) !important;
+    text-align: center;
+    margin: 40px 0 0 0 !important;
+    position: relative;
+    font-size: 29px !important;
+  }
+.heading-title-contact::after {
+    content: "";
+    display: block;
+    width: 149px !important;
+    height: 3px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contact-custom-container{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 1238px !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+    margin-bottom: 121px !important;
+  }
+  .col{
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+  }
+.container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+.container .icons{
+    width: 44px;
+    height: 40px;
+    margin-right: 13px;
+}
+  .container p{
+    font-weight: 600;
+    font-size: 16px;
+    color: #30396B;
+    letter-spacing: 2.24px;
+    margin: 0;
+  }
+ .contact-text, .email-text, .address-text{
+  margin: 0 !important;
+ }
+  .second-col-custom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contactUs-gradient{
+    position: absolute;
+    bottom: 83px;
+    right: 0;
+  }
+  .contactus-row{height: auto !important;}
+ 
+
+/* RESPONSIVE AREA */
+
+@media only screen
+and (max-width : 1400px) {
+  .contactus-img { width: 505px; height: 440px; padding-bottom: 54px;}
+  .contactus-row { height: 389px;}
+}
+@media only screen
+and (max-width : 1300px) {
+  .contact-custom-container { margin-bottom: 54px !important;}
+}
+
+@media only screen
+and (max-width : 1200px) {
+  .contactus-img { width: 458px; height: 389px; }
+  .contactus-row { height: 348px; padding: 0 60px !important;}
+  .contactUs-gradient {display: none; }
+ 
+}
+@media only screen
+and (max-width : 1100px) {
+  .contactus-img {   width: 100%; height: 100%; }
+  .address-text, .contact-text, .email-text{ font-size: 20px !important;}
+  .contactus-row { height: 348px;}
+  .second-col-custom { padding-right: 0 !important; }
+  .container .icons { width: 39px; height: 35px; }
+  .container { margin-bottom: 27px;}
+}
+
+@media only screen
+and (max-width : 1000px) {
+  .contactus-img {   width: 100%; height: 100%; }
+  .address-text, .contact-text, .email-text { font-size: 19px !important;}
+
+  .container .icons { width: 34px; height: 30px; }
+}
+@media only screen
+and (max-width : 900px) {
+  .contactus-img { width: 100%; height: 100%; }
+  .address-text, .contact-text, .email-text { font-size: 19px !important; }
+  .container .icons { width: 30px; height: 26px; }
+  .contactus-row { height: 290px;}
+}
+@media only screen
+and (max-width : 800px) {
+  .heading-title-contact { font-size: 31px !important; }
+  .address-text, .contact-text, .email-text { font-size: 16px !important; }
+  .container .icons { width: 21px; height: 19px; }
+  .contactus-img { width: 100%; height: 100%; }
+  .contactus-row { height: 210px; }
+  .contact-custom-container { margin-bottom: 20px !important; }
+}
+@media only screen
+and (max-width : 700px) {
+  .heading-title-contact { font-size: 28px !important; }
+  .container .icons { width: 45px; height: 45px; }
+  .contactus-img { width: 100%; height: 100%; }
+  .contactus-row { height: 880px; flex-direction: column !important; max-width: 600px;}
+  .address-text, .contact-text, .email-text { font-size: 19px !important; text-align: center; padding-top: 11px; } 
+}
+/* Smartphones */
+@media only screen
+and (max-width : 600px) {
+  .contactus-row { height: 880px !important;  }
+}
+
+@media only screen
+and (max-width : 500px) { 
+  .contactus-img { padding: 0 45px 0 45px; } 
+  .contact-col { padding: 0 !important;max-width: 85%;}
+  .address-text, .contact-text, .email-text { font-size: 16px !important; }
+  .contactus-row{ height: 880px; }
+  .contactus-img { width: 100%; height: 100%; padding: 0 !important }
+  
+}

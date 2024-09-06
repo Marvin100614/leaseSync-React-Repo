@@ -1,0 +1,129 @@
+.about-main-container{
+    max-width: 1600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding-top: 82px;
+}
+.heading-title-about::after {
+    content: "";
+    display: block;
+    width: 69px !important ;
+    height: 3px;
+    background-color: var(--blue-color);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .heading-title-about {
+    font-weight: bold !important;
+    color: var(--darkBlue-color) !important;
+    text-align: center;
+    margin: 40px 0 40px 0 !important;
+    position: relative;
+    font-size: 29px !important;
+  }
+  .about-custom-container{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    max-width: 1238px !important;
+    width: 100% !important;
+    margin: 0 auto;
+    padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * 0) !important;
+    flex-direction: column !important;
+  }
+ .first-container p{
+    font-size: 24px;
+    color: #1AA7EC !important;
+    text-align: center;
+    font-weight: 500 !important;
+    margin-top: 0 !important;
+ }
+ .first-container span{
+    color: #2C3776 !important;
+ }
+ .second-container{
+    margin: 38px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .second-container img{
+   margin-right: 30px;;
+ }
+ .second-container h2{
+    font-weight: 800;
+    font-size: 50px;
+    color: #2C3776;
+    letter-spacing: 2px;
+  }
+  .second-container  h2 span{
+    background-image: linear-gradient(to right, #4ADEDE, #1AA7EC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .third-container{
+    margin-bottom: 121px;
+  }
+  .third-container p{
+    margin: 0 !important;
+    font-weight: 500 !important;
+    font-size: 24px;
+    color: #2C3776;
+    text-align: center;
+  }
+  .third-container p span{
+    color: #1AA7EC;
+  }
+ 
+ 
+ 
+/* RESPONSIVE AREa */
+
+/* Large Tablet Devices */
+@media only screen
+and (max-width : 1400px) {
+  .about-custom-container { max-width: 1085px !important;}
+}
+
+@media only screen
+and (max-width : 1200px) {
+  .about-custom-container { max-width: 839px !important; margin-bottom: 0 !important; }
+}
+
+@media only screen
+and (max-width : 900px) {
+  .about-text { font-size: 21px !important;}
+  .about-custom-container { max-width: 700px !important; } 
+  .second-container h2 { font-size: 45px; }
+}
+ 
+@media only screen
+and (max-width : 800px) {
+  .about-custom-container { max-width: 623px !important; }
+  .myt-logo { width: 315px; }
+}
+
+@media only screen
+and (max-width : 700px) {
+  .myt-logo { width: 248px; }
+  .second-container h2 { font-size: 34px; }
+  .about-text { font-size: 17px !important;}
+}
+/* Smartphones */
+@media only screen
+and (max-width : 600px) {
+  .about-custom-container { max-width: 400px !important; }
+  .myt-logo { width: 220px; margin: 0 !important}
+  .second-container h2 { font-size: 30px; }
+}
+
+@media only screen
+and (max-width : 500px) {
+  .about-custom-container { max-width: 340px !important; }
+  .about-text { font-size: 15px !important;}
+  .second-container{flex-direction: column !important;}
+}
